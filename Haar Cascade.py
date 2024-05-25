@@ -4,7 +4,7 @@ from tensorflow.keras.models import load_model
 
 def extract_mouth_haar(image, target_resolution=(100, 100)):
     # Load the pre-trained mouth cascade classifier
-    mouth_cascade = cv2.CascadeClassifier('haarcascade_mcs_mouth.xml')
+    mouth_cascade = cv2.CascadeClassifier('Weights & Models/haarcascade_mcs_mouth.xml')
 
     # Convert the image to grayscale for better performance
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
