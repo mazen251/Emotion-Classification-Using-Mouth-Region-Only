@@ -93,8 +93,8 @@ For any inquiries or further information, please contact:
 Mazen Walid - [@Mazen Walid](https://www.linkedin.com/in/mazen-walid-225582208/)
 
 ## Acknowledgements
-- TensorFlow
-- YOLO
-- OpenCV
-- Haar Cascade
 
+- [TensorFlow](https://www.tensorflow.org/)
+- [YOLO](https://www.ultralytics.com/)
+- [OpenCv](https://opencv.org/)
+- Haar Cascade
