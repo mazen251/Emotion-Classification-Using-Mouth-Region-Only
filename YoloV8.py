@@ -189,15 +189,13 @@ if __name__ == '__main__':
 
     frame_count = 0
 
-    # Define the directory to save the cropped images
+    # eb2a shelha (was only used to enhance the model (gathering data for the training process to create a wider dataset))
     save_path = 'Cropped Images from Run'
 
-    # Create the directory if it does not exist
     os.makedirs(save_path, exist_ok=True)
 
-    # Define the codec and create a VideoWriter object
-    fourcc = cv2.VideoWriter_fourcc(*'XVID')  # You can change the codec based on your preference
-    output_path = 'output_video.avi'  # Change the file name and extension as needed
+    fourcc = cv2.VideoWriter_fourcc(*'XVID')
+    output_path = 'output_video.avi'
     output_video = cv2.VideoWriter(output_path, fourcc, 20.0, (int(cap.get(3)), int(cap.get(4))))
 
     while True:

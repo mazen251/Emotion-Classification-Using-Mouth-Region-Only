@@ -7,46 +7,39 @@ from datetime import datetime
 from tensorflow.keras.models import load_model
 
 def extract_mouth_haar(frame, face_box, drawing_frame, save_path, frame_count, target_resolution=(100, 50)):
-    # Extract face region from the frame
-    x, y, w, h = [int(v) for v in face_box]  # Convert to integers
+    x, y, w, h = [int(v) for v in face_box]  #
     face_region = frame[y:y + h, x:x + w]
 
-    # Convert face region to grayscale for Haar cascade
     gray_face_region = cv2.cvtColor(face_region, cv2.COLOR_BGR2GRAY)
 
-    # Load Haar cascade for mouth detection
     mouth_cascade = cv2.CascadeClassifier('Weights & Models/haarcascade_mcs_mouth.xml')
 
-    # Detect mouths
     mouths = mouth_cascade.detectMultiScale(gray_face_region, scaleFactor=1.8, minNeighbors=15)
 
     if len(mouths) > 0:
-        # Assuming the first detected mouth is the one we want
         mx, my, mw, mh = mouths[0]
-        mx += x  # Adjust X coordinate relative to the whole frame
-        my += y  # Adjust Y coordinate relative to the whole frame
+        mx += x
+        my += y
 
         # Crop mouth region from the original frame (not the grayscale one)
         mouth_region = frame[my:my + mh, mx:mx + mw]
 
-        # Resize the mouth region
         resized_mouth = cv2.resize(mouth_region, target_resolution)
 
-        # Draw bounding box around the mouth on the drawing frame
+        # bounding box
         cv2.rectangle(drawing_frame, (mx, my), (mx + mw, my + mh), (0, 255, 0), 2)
 
-        # Save the cropped mouth image
+        # cropped mouth image (eb2a shelha)
         filename = os.path.join(save_path, f"mouth_frame_{frame_count}.jpg")
         cv2.imwrite(filename, resized_mouth)
 
-        # Preprocess for the model
-        preprocessed_mouth = resized_mouth / 255.0  # Normalize pixel values
+        preprocessed_mouth = resized_mouth / 255.0
         preprocessed_mouth = np.reshape(preprocessed_mouth, (1, target_resolution[1], target_resolution[0], 3))
 
-        return preprocessed_mouth, (mx, my, mw, mh)  # Add mouth bounding box coordinates to the return statement
+        return preprocessed_mouth, (mx, my, mw, mh)
 
     else:
-        return None, None  # Return None for both values if no mouth is detected
+        return None, None
 
 class YOLOv8_face:
     def __init__(self, path, conf_thres=0.2, iou_thres=0.5):
