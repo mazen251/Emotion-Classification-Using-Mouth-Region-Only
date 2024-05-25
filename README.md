@@ -4,6 +4,7 @@ Welcome to the Emotion Classification Using Mouth Region Only project! This repo
 ## Table of Contents
 - Introduction
 - Features
+- Demo
 - Installation
 - Usage
 - Database and Pre-trained Models
@@ -20,6 +21,8 @@ The Emotion Classification Using Mouth Region Only project aims to detect the mo
 - **Haar Cascade:** Utilizes Haar Cascade specifically trained to focus on the mouth region.
 - **Combination:** Combines YOLOv8 and Haar Cascade for robust mouth detection and emotion classification.
 
+## Demo
+![Image Example](Demos/Run.jpg)
 
 ## Installation
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
