@@ -8,6 +8,7 @@ Welcome to the Emotion Classification Using Mouth Region Only project! This repo
 - Installation
 - Usage
 - Database and Pre-trained Models
+- Publication
 - Contributing
 - License
 - Contact
@@ -65,6 +66,14 @@ The Weights & Models folder contains the following:
 - Pre-trained CNN Classifier: A CNN model (binary_emotion_model.h5) trained on a custom-made mouth region dataset. This model captures the cropped ROI image from YOLOv8 and Haar Cascade (mouth region) and classifies the emotion as happy or sad.
 - 
 A custom-made mouth region dataset will be provided on Kaggle soon. Stay tuned for updates!
+
+## Publication
+This project was published as part of the following IEEE paper:
+- **Title:** A Scoring Approach for Improving Presentation Impact: Addressing Voice Stuttering, AR Glasses-Based Emotion Recognition, and Profiled Movement Assessment
+- **Authors:** Mazen Walid, Mostafa Ameen, Moamen Zaher & Ayman Atia
+- **Conference/Journal:** 2024 6th International Conference on Computing and Informatics (ICCI)
+- **Date:** 6-7 March 2024
+- **Link:** https://ieeexplore.ieee.org/document/10485076
 
 ## Contributing
 contributions are welcomed to improve this project. To contribute, please follow these steps:
