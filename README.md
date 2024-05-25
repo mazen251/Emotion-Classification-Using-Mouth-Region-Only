@@ -41,7 +41,7 @@ pip install -r requirements.txt
 #Prepare the Model
 Place your trained TensorFlow model (.h5 file) in the Weights & Models directory. Or use the existing CNN model that i have trained.
 
-#Run the App any if the .py files you want.
+#Run the App any of the .py files you want.
 ```
 ## Usage
 You can run any .py file in this repository either on a real-time video camera feed or a pre-recorded video. This can be changed in the code by setting the appropriate video source.
