@@ -70,7 +70,7 @@ A custom-made mouth region dataset will be provided on Kaggle soon. Stay tuned f
 ## Publication
 This project was published as part of the following IEEE paper:
 - **Title:** A Scoring Approach for Improving Presentation Impact: Addressing Voice Stuttering, AR Glasses-Based Emotion Recognition, and Profiled Movement Assessment
-- **Authors:** Mazen Walid, Mostafa Ameen, Moamen Zaher & Ayman Atia
+- **Authors:** Mazen Walid, et al.
 - **Conference:** 2024 6th International Conference on Computing and Informatics (ICCI)
 - **Date:** 6-7 March 2024
 - **Link:** https://ieeexplore.ieee.org/document/10485076
