@@ -23,6 +23,8 @@ The Emotion Classification Using Mouth Region Only project aims to detect the mo
 - **Combination:** Combines YOLOv8 and Haar Cascade for robust mouth detection and emotion classification.
 
 ## Demo
+
+![Image Example](Demos/Run2.png)
 ![Image Example](Demos/Run.jpg)
 
 ## Installation
