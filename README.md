@@ -67,7 +67,7 @@ The Weights & Models folder contains the following:
 - Haar Cascade: An XML file for Haar Cascade trained specifically to detect mouth regions (haarcascade_mcs_mouth.xml).
 - Pre-trained CNN Classifier: A CNN model (binary_emotion_model.h5) trained on a custom-made mouth region dataset. This model captures the cropped ROI image from YOLOv8 and Haar Cascade (mouth region) and classifies the emotion as happy or sad.
 
-A custom-made mouth region dataset will be provided on Kaggle soon. Stay tuned for updates!
+A custom-made mouth region dataset will be provided on Kaggle soon. Stay tuned for updates!!
 
 ## Publication
 This project was published as part of the following IEEE paper:
