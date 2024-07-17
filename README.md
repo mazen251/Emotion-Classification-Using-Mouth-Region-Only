@@ -10,7 +10,6 @@ Welcome to the Emotion Classification Using Mouth Region Only project! This repo
 - Database and Pre-trained Models
 - Publication
 - Contributing
-- License
 - Contact
 - Acknowledgements
 
@@ -85,9 +84,6 @@ contributions are welcomed to improve this project. To contribute, please follow
 - Commit your changes (git commit -m 'Add some feature').
 - Push to the branch (git push origin feature/your-feature).
 - Open a pull request.
-
-## License
-This project is licensed under the MIT License. See the `LICENSE` for more details.
 
 ## Contact
 For any inquiries or further information, please contact:
