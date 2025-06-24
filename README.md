@@ -24,7 +24,6 @@ The Emotion Classification Using Mouth Region Only project aims to detect the mo
 ## Demo
 
 ![Image Example](Demos/run2.png)
-![Image Example](Demos/Run.jpg)
 
 ## Installation
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
